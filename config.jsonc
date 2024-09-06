@@ -1,0 +1,39 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// Sleek 
+
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"position": "bottom",
+"height": 14,
+"margin-left": 10,
+"margin-right": 10,
+"margin-bottom": 2,
+	
+"modules-left": [
+	"custom/menu",
+	"custom/separator#blank_2",
+	"custom/picker",
+	"custom/separator#blank_2",
+	"bluetooth",
+	"custom/separator#blank"
+],
+
+"modules-center": [
+	"custom/separator#blank",
+	"hyprland/workspaces",
+	"custom/separator#blank"
+],
+		
+"modules-right": [
+	"custom/separator#blank", 
+	"custom/separator#blank",
+	"clock"
+],
+
+"custom/picker": {
+  "format": " ", 
+  "on-click": "~/Applications/hyprpicker -a"
+}
+}
